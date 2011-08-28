@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require 'pager_duty_client/version'
 
 class PagerDutyRestClient
 
