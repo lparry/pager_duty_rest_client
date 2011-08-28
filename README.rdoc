@@ -1,8 +1,8 @@
-= pager_duty_rest_client
+= PagerDutyRestClient
 
-Description goes here.
+Quick and dirty class for talking to the PagerDuty REST api. Currently only supports fetching schedules, but it should be a piece of cake to add other calls.
 
-== Contributing to pager_duty_rest_client
+== Contributing to PagerDutyRestClient
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
