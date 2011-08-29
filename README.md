@@ -18,7 +18,7 @@ Quick and dirty class for talking to the PagerDuty REST api. Currently only supp
 ### get_incident_count:
 
     client.get_incidents_count
-    # => 72
+    # => {"total"=>72}
 
 ### get_incident_data:
 
