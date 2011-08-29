@@ -19,6 +19,16 @@ class PagerDutyRestClient
     authenticated_get(path, form_data)
   end
 
+  def get_incidents_data(extra_args = {})
+    path = "/api/v1/incidents"
+    authenticated_get(path, extra_args)
+  end
+
+  def get_incidents_count(extra_args = {})
+    path = "/api/v1/incidents/count"
+    authenticated_get(path, extra_args)
+  end
+
   private
 
   def authenticated_get(path, form_data)
