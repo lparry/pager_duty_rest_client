@@ -10,7 +10,12 @@ describe PagerDutyRestClient do
   let(:expected_time2) { '2011-08-30T08:56+0' }
 
   it "correctly converts the dates to UTC" do
-    subject.should_receive(:authenticated_get).with('/api/v1/schedules/code/entries', {'since' => expected_time1, 'until' => expected_time2})
+    subject.should_receive(:authenticated_get).with('/api/v1/schedules/code/entries', 'since' => expected_time1, 'until' => expected_time2)
     subject.get_schedule_data('code', time1, time2)
+  end
+
+  it "passes through extra arguments" do
+    subject.should_receive(:authenticated_get).with('/api/v1/schedules/code/entries', 'since' => expected_time1, 'until' => expected_time2, :overflow => true)
+    subject.get_schedule_data('code', time1, time2, :overflow => true)
   end
 end
