@@ -1,6 +1,6 @@
 # PagerDutyRestClient
 
-Quick and dirty class for talking to the PagerDuty REST api. Currently only supports fetching schedules, but it should be a piece of cake to add other calls.
+Quick and dirty class for talking to the PagerDuty REST api.
 
 ## Examples
 
