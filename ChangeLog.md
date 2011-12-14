@@ -1,3 +1,6 @@
+### Version 0.3
+ - support for https
+
 ### Version 0.2
  - support for get_incident_count
  - support for get_incident_data
