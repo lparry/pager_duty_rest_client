@@ -5,7 +5,7 @@ Quick and dirty class for talking to the PagerDuty REST api.
 ## Examples
 
 ### instantiation:
-    client = PagerDutyRestClient.new('orgname', 'user@orgname.com', 'password')
+    client = PagerDutyRestClient.new('orgname', 'user@orgname.com', 'password', :https => true)
 
 ### get_schedule_data:
 
